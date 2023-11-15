@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Sample webpage</title>
+        <link ref="stylesheet"type="text/css"href="style.css"/>
+    </head>
+    <body style="background-color: #ADD8E6;">
+    <center><h1>𝓐𝓡𝓘𝓖𝓝𝓐𝓡 𝓐𝓝𝓝𝓐 𝓒𝓞𝓛𝓛𝓔𝓖𝓔</h1></center>
+    <div id="banner">
+        
+    </div>
+    <div id="content1">
+        <h2>Sneha.A.M</h2>
+        <p class"para1">
+            Arignar Anna college ,<br>
+            Aralvaimozhi <br>
+            bsc computer science
+        </p>
+       
+    </div>
+    <div id="content2">
+        <img src="c:\Users\welcome\Pictures\2022-05"alt="Kanyakumari"width="40%"\>
+    </div>
+    <script>
+        document.querySelectorAll('a[href^="#"]').foreach(anchor=>
+        {
+            anchor.addeventlistener('click',function(e){
+                e.preventDefault();
+                const targetId=this.getattribute('href').substring(1);
+                const targetElement=document.getElementById(targetId);
+                if(targetElement){
+                    window.scrollTo({
+                        top:
+                        targetElement.offsetTop,
+                        behavior:'smooth'
+                    });
+                }
+            });
+        });
+        </script>
+    </body>
+</html>    
